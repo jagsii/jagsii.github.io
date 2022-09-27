@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <style>
+    .term {
+        background-color: #fefefe;
+    .night & {
+        background-color: #202124;
+    }
+    label {
+        font-weight: bold;
+    }
+    p {
+        text-indent: 2em;
+        line-height: 1.5em;
+        margin: 1em 0;
+    }
+    .sdk-list > div {
+        margin-bottom: 4em;
+    }
+    .perm-list > div {
+        padding: 2em;
+    }
+    .perm-list p {
+        text-indent: 0;
+    }
+    table {
+        border-spacing: 0;
+        border: 1px solid #666;
+    }
+
+    td, th {
+        border: 1px solid #666;
+        padding: 1em;
+    }
+}  
+	</style>
+    <title>权限申请与使用</title>
+</head>
+<body>
+<div id="container" class="term">
+    <h1>大力追书应用权限申请与使用情况说明</h1>
+    <p>为保障大力追书的相关功能的实现与应用安全稳定的运行，我们可能会申请或使用部分您的设备操作系统权限。我们会采取严格的保密及安全措施，以保护您的个人信息安全，以下是我们可能申请、使用的相关操作系统权限，该内容后续可能随着大力追书的版本升级有所变化，我们将及时根据这些变动对列表进行调整，以确保您及时获悉权限的申请与使用情况。</p>
+    <div class="perm-list">
+        <div>
+            <p><label>权限名称：</label>android.permission.ACCESS_COARSE_LOCATION</p>
+            <p><label>权限描述：</label>粗略位置信息权限</p>
+            <p><label>使用场景：</label>广告个性化</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.READ_PHONE_STATE</p>
+            <p><label>权限描述：</label>电话（部分机型设备信息）权限</p>
+            <p><label>使用场景：</label>获取设备信息（如IMEI、序列号），生成设备ID，用于广告个性化等</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.READ_EXTERNAL_STORAGE、android.permission.WRITE_EXTERNAL_STORAGE</p>
+            <p><label>权限描述：</label>存储读写权限</p>
+            <p><label>使用场景：</label>下载小说、字体等文件</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.REQUEST_INSTALL_PACKAGES</p>
+            <p><label>权限描述：</label>安装APK权限</p>
+            <p><label>使用场景：</label>安装更新应用、广告等</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.INTERNET、android.permission.ACCESS_NETWORK_STATE、android.permission.ACCESS_WIFI_STATE、android.permission.CHANGE_NETWORK_STATE</p>
+            <p><label>权限描述：</label>网络权限</p>
+            <p><label>使用场景：</label>访问网络、获取网络状态</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.MODIFY_AUDIO_SETTINGS</p>
+            <p><label>权限描述：</label>更改系统音频设置</p>
+            <p><label>使用场景：</label>用于修改音量等音频设置</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.WAKE_LOCK</p>
+            <p><label>权限描述：</label>保持屏幕唤醒</p>
+            <p><label>使用场景：</label>用于阅读页面保持屏幕唤醒</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.QUERY_ALL_PACKAGES</p>
+            <p><label>权限描述：</label>查询已安装应用</p>
+            <p><label>使用场景：</label>广告SDK</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.REORDER_TASKS</p>
+            <p><label>权限描述：</label>访问和改变最近任务顺序</p>
+            <p><label>使用场景：</label>前后台切换</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>android.permission.VIBRATE</p>
+            <p><label>权限描述：</label>控制手机震动</p>
+            <p><label>使用场景：</label>通知和操作时的提示</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>Privacy - Tracking Usage Description（NSUserTrackingUsageDescription）</p>
+            <p><label>权限描述：</label>允许广告追踪符获取</p>
+            <p><label>使用场景：</label>出于广告和统计的目的，会使用设备的唯一标识符来完成广告投放和统计相关事项</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>Privacy - Photo Library Usage Description（NSPhotoLibraryUsageDescription）</p>
+            <p><label>权限描述：</label>相册访问权限</p>
+            <p><label>使用场景：</label>用于用户设置头像</p>
+        </div>
+        <div>
+            <p><label>权限名称：</label>Privacy - Location When In Use Usage Description（NSLocationWhenInUseUsageDescription）</p>
+            <p><label>权限描述：</label>访问用户地理信息</p>
+            <p><label>使用场景：</label>用于广告个性化</p>
+        </div>
+    </div>
+</div>
+<script>
+  function toggleNight(night) {
+    if (night) {
+      document.body.classList.add('night');
+    } else {
+      document.body.classList.remove('night');
+    }
+  }
+</script>
+</body>
+</html>

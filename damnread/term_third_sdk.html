@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <style>
+    .term {
+        background-color: #fefefe;
+    .night & {
+        background-color: #202124;
+    }
+    label {
+        font-weight: bold;
+    }
+    p {
+        text-indent: 2em;
+        line-height: 1.5em;
+        margin: 1em 0;
+    }
+    .sdk-list > div {
+        margin-bottom: 4em;
+    }
+    .perm-list > div {
+        padding: 2em;
+    }
+    .perm-list p {
+        text-indent: 0;
+    }
+    table {
+        border-spacing: 0;
+        border: 1px solid #666;
+    }
+
+    td, th {
+        border: 1px solid #666;
+        padding: 1em;
+    }
+}  
+	</style>
+    <title>第三方SDK目录</title>
+</head>
+<body>
+<div id="container" class="term">
+    <h1>涉及收集用户个人信息的第三方SDK目录</h1>
+    <p>为保障大力追书服务的相关功能的实现与应用安全稳定的运行，我们可能会接入由第三方提供的软件开发包（SDK）或类似应用程序实现相关目的。我们会对合作方获取信息的软件工具开发包（SDK）或类似应用程序进行严格的安全评估，以保护您的个人信息安全。以下是我们接入的主要的第三方服务商的信息：</p>
+    <div class="sdk-list">
+        <div>
+            <p><label>SDK名称：</label>腾讯广点通广告SDK</p>
+            <p><label>用途：</label>广告</p>
+            <p><label>收集信息：</label>系统语言、屏幕高宽、屏幕方向、屏幕DPI信息、设备ID、用户ID、粗略位置、崩溃数据、性能数据</p>
+            <p><label>数据是否去标识化传输：</label>是</p>
+            <p><label>隐私政策：</label><a href="https://imgcache.qq.com/gdt/cdn/adn/uniondoc/ylh_sdk_privacy_statement.html" target="_blank">https://imgcache.qq.com/gdt/cdn/adn/uniondoc/ylh_sdk_privacy_statement.html</a></p>
+        </div>
+        <div>
+            <p><label>SDK名称：</label>百度语音合成SDK</p>
+            <p><label>用途：</label>语音合成</p>
+            <p><label>收集信息：</label>操作系统版本、唯一设备标识符、国际移动设备身份码IMEI、操作系统的版本、最终用户访问服务的日期、时间、时长</p>
+            <p><label>数据是否去标识化传输：</label>是</p>
+            <p><label>隐私政策：</label><a href="https://ai.baidu.com/ai-doc/REFERENCE/Jkdyl0v3v" target="_blank">https://ai.baidu.com/ai-doc/REFERENCE/Jkdyl0v3v</a></p>
+        </div>
+    </div>
+</div>
+<script>
+  function toggleNight(night) {
+    if (night) {
+      document.body.classList.add('night');
+    } else {
+      document.body.classList.remove('night');
+    }
+  }
+</script>
+</body>
+</html>
