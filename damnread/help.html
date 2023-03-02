@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        #container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 720px;
+            padding: 16px;
+            line-height: 1.5em;
+        }
+        h5 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            border-bottom: 1px dotted #f1f1f1;
+            padding: 16px 0;
+        }
+        code {
+            font-size: 14px;
+            background-color: #f1f1f1;
+            padding: 2px 3px;
+            margin: 0 3px;
+        }
+        .night {
+            color: #e1e1e1;
+            background-color: #202124;
+        }
+        .night .section {
+            border-color: #333333;
+        }
+        .night code {
+            background-color: #333333;
+        }
+    </style>
+    <title>帮助与支持</title>
+</head>
+<body class="night">
+    <div id="container">
+        <div class="section">
+            <h5>首页</h5>
+            <p>通过首页搜索框可以使用选中的搜索引擎搜索小说、漫画等内容。</p>
+            <p>在首页下方列出一些支持转码的网站，如果没有明确的目标，可以试着访问这些网站。</p>
+            <p>如果有喜欢的网站，可以将它设置为默认页（<code>设置</code>&gt;<code>默认页</code>），每次打开本软件的内置浏览器，就会自动打开该网页。</p>
+        </div>
+        <div class="section">
+            <h5>网页转码</h5>
+            <p>使用本软件内置浏览器访问支持转码的网站，在页面右侧会显示<span style="font-size: 14px;display: inline-block;color:#ffffff;background-color:#ff6600;margin: 0 0.5em;width: 32px;height: 32px;line-height: 32px;border-radius: 16px;text-align: center;">转码</span>按钮，点击后开始转码阅读。</p>
+            <p>转码阅读可以享受干净和丰富的阅读体验，去除网页广告，支持调整字体、字号、行间距、字体颜色和背景颜色等，还可以将文字转语音收听小说。</p>
+        </div>
+        <div class="section">
+            <h5>搜索增强</h5>
+            <p>软件默认开启“搜索增强”功能，在使用支持的搜索引擎进行搜索的时候，程序会自动检测支持转码的网站，并在搜索结果中显示<span style="font-size: 14px;color:#ffffff;background-color:#ff6600;padding: 2px 6px;border-radius: 3px;margin: 0 0.5em;">转码</span>。</p>
+            <p>在搜索结果的右侧有一个浮动的<span style="display: inline-block;padding-left: 0.5em;padding-right: 0.5em;font-size: 14px;border-top-left-radius: 12px;border-bottom-left-radius: 12px;color:#ffffff;background-color:#ff6600;margin: 0 0.5em;">收起</span>或<span style="display: inline-block;padding-left: 0.5em;padding-right: 0.5em;font-size: 14px;border-top-left-radius: 12px;border-bottom-left-radius: 12px;color:#ffffff;background-color:#ff6600;margin: 0 0.5em;">展开</span>按钮，点击后可以隐藏和显示不支持转码的搜索结果。</p>
+        </div>
+        <div class="section">
+            <h5>错误和失败</h5>
+            <p>如果使用中国大陆的网络，访问一些网站会显示<span style="color: #5f6368;margin: 0 0.5em;">ERR_CONNECTION_RESET</span>，这些网站使用中国大陆的网络无法访问，转码阅读也会失败。</p>
+            <p>由于本软件转码程序的局限，有时会出现转码失败或得到错误的转码结果的情况。此时可以通过点击阅读页上方的链接地址或右上角菜单栏的取消转码按钮，暂时使用浏览器阅读该章内容。</p>
+        </div>
+    </div>
+<script type="application/javascript">
+    function toggleNight(night) {
+      if(night) {
+        document.body.classList.add('night');
+      } else {
+        document.body.classList.remove('night');
+      }
+    }
+</script>
+</body>
+</html>
